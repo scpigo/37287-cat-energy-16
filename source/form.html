@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -28,6 +29,85 @@
     </header>
 
     <main class="page-main">
+      <section class="form">
+        <h1 class="form__title page-title">Подбор программы</h1>
+        <p class="form__description">Заполните анкету и мы подберем
+        программу питания для вашего кота</p>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="form__info">
+            <label class="form__label">
+              Имя:*
+              <input class="form__label-text" type="text" name="name" required>
+            </label>
+            <label class="form__label">
+              Вес (Кг):*
+              <input class="form__label-text" type="text" name="weight" required>
+            </label>
+            <label class="form__label">
+              Возраст (Лет):
+              <input class="form__label-text" type="text" name="age">
+            </label>
+          </fieldset>
+
+          <fieldset class="form__type">
+            <label class="form__label">
+              <input class="form__label-radio" type="radio" name="type" value="loss" checked>
+              Похудение
+            </label>
+            <label class="form__label">
+              <input class="form__label-radio" type="radio" name="type" value="gain">
+              Набор массы
+            </label>
+            <label class="form__label">
+              <input class="form__label-radio" type="radio" name="type" value="advice">
+              Не знаю (нужен ваш совет)
+            </label>
+          </fieldset>
+
+          <fieldset class="form__contact">
+            <legend class="form__legend">Контактные данные (владельца кота)</legend>
+            <label class="form__label">
+              E-mail:*
+              <input class="form__label-text" type="email" name="email" required>
+            </label>
+            <label class="form__label">
+              Телефон:*
+              <input class="form__label-text" type="tel" name="phone" required>
+            </label>
+          </fieldset>
+
+          <fieldset class="form__comment">
+            <legend class="form__legend">Комментарий</legend>
+            <textarea class="form__label" name="comment" placeholder="Расскажите обо всех повадках кота">
+            </textarea>
+          </fieldset>
+
+          <fieldset class="form__extra">
+            <legend class="form__legend">Дополнительно</legend>
+            <label class="form__label">
+              <input class="form__label-check" type="checkbox" name="extra" value="sweetener" checked>
+              Сахарозаменитель
+            </label>
+            <label class="form__label">
+              <input class="form__label-check" type="checkbox" name="extra" value="water">
+              Питьевая вода
+            </label>
+            <label class="form__label">
+              <input class="form__label-check" type="checkbox" name="extra" value="milk">
+              Молоко
+            </label>
+            <label class="form__label">
+              <input class="form__label-check" type="checkbox" name="extra" value="vitamins">
+              Витамины
+            </label>
+          </fieldset>
+          <button class="button" type="submit" name="submit-button">Отправить заявку</button>
+          <small class="form-legend">
+            <sup>*</sup> — Обязательные поля
+          </small>
+        </form>
+      </section>
+
       <section class="contacs">
         <h2 class="contacs__title">приглашаем к сотрудничеству дилеров!</h2>
         <p class="contacs__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
