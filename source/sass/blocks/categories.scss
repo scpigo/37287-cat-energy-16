@@ -1,0 +1,39 @@
+.categories {
+  padding: 0 20px;
+  margin-bottom: 28px;
+}
+
+.categories__list {
+  list-style: none;
+  padding: 0;
+}
+
+.categories__item {
+  min-height: 222px;
+  background: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.categories__title {
+  display: block;
+  width: auto;
+  padding: 40px 0;
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.categories__description {
+  padding: 0 20px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.categories__button {
+  display: block;
+  padding: 22px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-top: 1px solid #d9d9d9;
+}

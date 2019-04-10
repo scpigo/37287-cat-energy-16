@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 14px;
+  color: #111111;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip: rect(0 0 0 0);
+}
+
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/button.scss";
+@import "blocks/page-main.scss";
+@import "blocks/promo.scss";
+@import "blocks/page-title.scss";
+@import "blocks/categories.scss";
+@import "blocks/advantages.scss";
+@import "blocks/catalog.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social-list.scss";
+@import "blocks/copyright.scss";

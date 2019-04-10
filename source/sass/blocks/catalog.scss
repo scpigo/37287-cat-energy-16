@@ -1,0 +1,41 @@
+.catalog__title {
+  padding: 0 20px;
+}
+
+.catalog__list {
+  list-style: none;
+  padding: 0;
+}
+
+.catalog__item {
+  border-top: 1px solid #d9d9d9;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.catalog__link,
+.catalog-wrapper {
+  padding: 0 20px;
+}
+
+.catalog-wrapper {
+  margin-bottom: 10px;
+}
+
+.catalog__extra {
+  border-top: 1px solid #d9d9d9;
+}
+
+.catalog__extra-title {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.catalog__extra-description {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
