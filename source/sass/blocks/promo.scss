@@ -1,5 +1,18 @@
 .promo {
-  background: url("../img/index-background-mobile@1x.jpg") top center no-repeat;
+  position: relative;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.promo:before {
+  content: "";
+  position: absolute;
+  background: #64a83b;
+  z-index: -1;
+  padding: 0 50%;
+  height: 305px;
+
 }
 
 .promo__title {
@@ -13,4 +26,9 @@
   text-align: center;
   color: white;
   text-transform: uppercase;
+}
+
+.promo__image {
+  display: block;
+  margin: 0 auto;
 }
