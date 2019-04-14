@@ -1,0 +1,22 @@
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav__item {
+  border-bottom: 1px solid #e6e6e6;
+  height: 64px;
+  vertical-align: middle;
+}
+
+.main-nav__link {
+  display: block;
+  height: auto;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #111111;
+}
