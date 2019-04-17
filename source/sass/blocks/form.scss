@@ -1,0 +1,53 @@
+.form__title {
+  padding: 0 20px;
+}
+
+.form__description {
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+
+.form__info,
+.form__type,
+.form__contact,
+.form__comment,
+.form__extra {
+  border: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.form__info,
+.form__type {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.form__label {
+  padding: 0 20px;
+  padding-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.form__textarea {
+  margin: 0 20px;
+}
+
+.form__legend {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 0 20px;
+  padding-top: 20px;
+}
+
+.form__button {
+  border: none;
+  margin-bottom: 25px;
+  width: calc(100% - 40px);
+}
+
+.form-legend {
+  display: block;
+  text-align: center;
+}

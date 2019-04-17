@@ -1,0 +1,34 @@
+.extra {
+  padding: 0 20px;
+}
+
+.extra__title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.extra__list {
+  list-style: none;
+  padding: 0;
+}
+
+.extra__item {
+  padding: 15px 0;
+  border-top: 1px solid #d9d9d9;
+}
+
+.extra__item:last-child {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.extra__name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.extra__stats {
+  display: flex;
+  justify-content: space-between;
+}
