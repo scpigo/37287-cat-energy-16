@@ -1,3 +1,9 @@
 .page-main {
   min-width: 280px;
 }
+
+@media (min-width: 1300px) {
+  .page-main {
+    @include container;
+  }
+}

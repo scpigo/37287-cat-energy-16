@@ -18,3 +18,18 @@
 .button--extra {
   margin: 0;
 }
+
+@media (min-width: 768px) {
+  .button {
+    font-size: 20px;
+  }
+
+  .button--promo {
+    width: 245px;
+    padding: 9px 0;
+  }
+
+  .button--gray {
+    margin-top: 105px;
+  }
+}

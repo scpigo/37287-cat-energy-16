@@ -9,3 +9,9 @@
   text-decoration: none;
   color: #111111;
 }
+
+@media (min-width: 768px) {
+  .copyright {
+    margin: auto 0;
+  }
+}

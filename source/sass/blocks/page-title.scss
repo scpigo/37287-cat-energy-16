@@ -3,3 +3,9 @@
   font-weight: normal;
   font-size: 36px;
 }
+
+@media (min-width: 768px) {
+  .page-title {
+  font-size: 60px;
+  }
+}

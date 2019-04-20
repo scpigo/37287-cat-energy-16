@@ -16,3 +16,56 @@
   padding: 0;
   background: none;
 }
+
+@media (max-width: 767px) {
+  .page-header__logo-image--tablet {
+    @include invisible;
+  }
+
+  .page-header__logo-image--desktop {
+    @include invisible;
+  }
+}
+
+@media (max-width: 1299px) {
+  .page-header__logo-image--mobile {
+    @include invisible;
+  }
+
+  .page-header__logo-image--desktop {
+    @include invisible;
+  }
+}
+
+@media (min-width: 1300px) {
+  .page-header__logo-image--mobile {
+    @include invisible;
+  }
+
+  .page-header__logo-image--tablet {
+    @include invisible;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .page-header {
+    display: flex;
+    height: 140px;
+  }
+
+  .page-header__wrapper {
+    margin-left: 0;
+    border: none;
+  }
+
+  .page-header__toggle {
+    @include invisible;
+  }
+}
+
+@media (min-width: 1300px) {
+  .page-header {
+    @include container;
+  }
+}

@@ -12,3 +12,21 @@
   text-align: center;
   margin-top: 0;
 }
+
+@media (min-width: 768px) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+  }
+
+  .page-footer__logo {
+    margin: auto 0;
+  }
+}
+
+@media (min-width: 1300px) {
+  .page-footer {
+    @include container;
+  }
+}
