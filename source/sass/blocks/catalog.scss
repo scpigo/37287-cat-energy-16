@@ -82,7 +82,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 20px;
   }
 
   .catalog__item {
@@ -90,7 +89,6 @@
     width: 324px;
     min-height: 500px;
     border: none;
-    margin: 0 10px;
   }
 
   .catalog__item::before {
@@ -174,6 +172,14 @@
 }
 
 @media (min-width: 1300px) {
+  .catalog__title {
+    padding: 0;
+  }
+
+  .catalog__list {
+    margin: 0;
+  }
+
   .catalog__item {
     width: 245px;
   }

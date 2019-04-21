@@ -63,9 +63,3 @@
     @include invisible;
   }
 }
-
-@media (min-width: 1300px) {
-  .page-header {
-    @include container;
-  }
-}

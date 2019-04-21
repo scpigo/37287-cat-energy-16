@@ -7,8 +7,8 @@
   </head>
 
   <body>
-    <header class="page-header">
-      <div class="page-header__wrapper">
+    <header class="page-header container container__partial">
+      <div class="page-header__wrapper container__partial--wrapper">
         <a class="page-header__logo" href="index.html">
           <img class="page-header__logo-image page-header__logo-image--mobile" src="img/logo-mobile.svg" width="191" height="38" alt="Cat energy">
           <img class="page-header__logo-image page-header__logo-image--tablet" src="img/logo-tablet.svg" width="173" height="58" alt="Cat energy">
@@ -37,15 +37,18 @@
 
     <main class="page-main">
       <section class="promo">
-        <h1 class="promo__title page-title">Функциональное питание для котов</h1>
-        <p class="promo__description">Занялся собой? Займись котом!</p>
-        <img class="promo__image promo__image--mobile" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Банка с кормом">
-        <img class="promo__image promo__image--tablet" src="img/index-can-tablet@1x.jpg" width="709" height="609" alt="Банка с кормом">
-        <img class="promo__image promo__image--desktop" src="img/index-can-desktop@1x.png" width="552" height="499" alt="Банка с кормом">
-        <a class="button button--promo" href="form.html">Подобрать программу</a>
+        <div class="promo__background"></div>
+        <div class="container promo__container">
+          <h1 class="promo__title page-title">Функциональное питание для котов</h1>
+          <p class="promo__description">Занялся собой? Займись котом!</p>
+          <img class="promo__image promo__image--mobile" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Банка с кормом">
+          <img class="promo__image promo__image--tablet" src="img/index-can-tablet@1x.jpg" width="709" height="609" alt="Банка с кормом">
+          <img class="promo__image promo__image--desktop" src="img/index-can-desktop@1x.png" width="552" height="499" alt="Банка с кормом">
+          <a class="button button--promo" href="form.html">Подобрать программу</a>
+        </div>
       </section>
 
-      <section class="categories">
+      <section class="categories container">
         <h2 class="visually-hidden">Категории</h2>
         <ul class="categories__list">
           <li class="categories__item categories__item--slim">
@@ -61,7 +64,7 @@
         </ul>
       </section>
 
-      <section class="advantages">
+      <section class="advantages container">
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--natural">
@@ -120,31 +123,33 @@
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-text" src="img/logo-footer.svg" width="128" height="24" alt="Cat energy">
-      </a>
-      <ul class="social-list page-footer__social">
-        <li class="social-list__element">
-          <a class="social-list__link" href="#">
-            <img src="img/icon-vk-mobile.svg" width="22" height="12" alt="ВК">
-          </a>
-        </li>
-        <li class="social-list__element">
-          <a class="social-list__link" href="#">
-            <img src="img/icon-insta-mobile.svg" width="16" height="16" alt="Instagram">
-          </a>
-        </li>
-        <li class="social-list__element">
-          <a class="social-list__link" href="#">
-            <img src="img/icon-fb-mobile.svg" width="10" height="19" alt="Facebook">
-          </a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML academy">
+      <div class="container page-footer__container">
+        <a class="page-footer__logo" href="index.html">
+          <img class="page-footer__logo-text" src="img/logo-footer.svg" width="128" height="24" alt="Cat energy">
         </a>
+        <ul class="social-list page-footer__social">
+          <li class="social-list__element">
+            <a class="social-list__link" href="#">
+              <img src="img/icon-vk-mobile.svg" width="22" height="12" alt="ВК">
+            </a>
+          </li>
+          <li class="social-list__element">
+            <a class="social-list__link" href="#">
+              <img src="img/icon-insta-mobile.svg" width="16" height="16" alt="Instagram">
+            </a>
+          </li>
+          <li class="social-list__element">
+            <a class="social-list__link" href="#">
+              <img src="img/icon-fb-mobile.svg" width="10" height="19" alt="Facebook">
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
+          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML academy">
+          </a>
+        </div>
       </div>
     </footer>
   </body>
