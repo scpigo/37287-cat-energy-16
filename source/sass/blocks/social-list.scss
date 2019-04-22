@@ -7,3 +7,15 @@
   border-bottom: 1px solid #d9d9d9;
   list-style: none;
 }
+
+@media (min-width: 768px) {
+  .social-list {
+    border: none;
+    padding: 0 20px;
+    margin: auto 0;
+  }
+
+  .social-list__element {
+    margin-right: 28px;
+  }
+}

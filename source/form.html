@@ -7,10 +7,12 @@
   </head>
 
   <body>
-    <header class="page-header">
-      <div class="page-header__wrapper">
+    <header class="page-header container container__partial">
+      <div class="page-header__wrapper container__partial--wrapper">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Cat energy">
+          <img class="page-header__logo-image page-header__logo-image--mobile" src="img/logo-mobile.svg" width="191" height="38" alt="Cat energy">
+          <img class="page-header__logo-image page-header__logo-image--tablet" src="img/logo-tablet.svg" width="173" height="58" alt="Cat energy">
+          <img class="page-header__logo-image page-header__logo-image--desktop" src="img/logo-desktop.svg" width="202" height="59" alt="Cat energy">
         </a>
         <button class="page-header__toggle" type="button">
           <img class="page-header__toggle-image" src="img/icon-close.svg" width="24" height="18">
@@ -123,31 +125,33 @@
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-text" src="img/logo-footer.svg" width="128" height="24" alt="Cat energy">
-      </a>
-      <ul class="social-list page-footer__social">
-        <li class="social-list__element">
-          <a class="social-list__link" href="#">
-            <img src="img/icon-vk-mobile.svg" width="22" height="12" alt="ВК">
-          </a>
-        </li>
-        <li class="social-list__element">
-          <a class="social-list__link" href="#">
-            <img src="img/icon-insta-mobile.svg" width="16" height="16" alt="Instagram">
-          </a>
-        </li>
-        <li class="social-list__element">
-          <a class="social-list__link" href="#">
-            <img src="img/icon-fb-mobile.svg" width="10" height="19" alt="Facebook">
-          </a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML academy">
+      <div class="container page-footer__container">
+        <a class="page-footer__logo" href="index.html">
+          <img class="page-footer__logo-text" src="img/logo-footer.svg" width="128" height="24" alt="Cat energy">
         </a>
+        <ul class="social-list page-footer__social">
+          <li class="social-list__element">
+            <a class="social-list__link" href="#">
+              <img src="img/icon-vk-mobile.svg" width="22" height="12" alt="ВК">
+            </a>
+          </li>
+          <li class="social-list__element">
+            <a class="social-list__link" href="#">
+              <img src="img/icon-insta-mobile.svg" width="16" height="16" alt="Instagram">
+            </a>
+          </li>
+          <li class="social-list__element">
+            <a class="social-list__link" href="#">
+              <img src="img/icon-fb-mobile.svg" width="10" height="19" alt="Facebook">
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
+          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/htmlacademy.svg" width="27" height="34" alt="HTML academy">
+          </a>
+        </div>
       </div>
     </footer>
   </body>

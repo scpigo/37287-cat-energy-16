@@ -21,3 +21,40 @@
   text-decoration: none;
   color: #111111;
 }
+
+@media (min-width: 768px) {
+  .main-nav {
+    padding: 0 2px;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__item {
+    padding: 12px 0;
+    margin: 0 18px;
+    box-sizing: border-box;
+    border: none;
+  }
+
+  .main-nav__item--active {
+    border-bottom: 2px solid #68b738;
+  }
+
+  .main-nav__link {
+    font-size: 18px;
+    font-weight: normal;
+  }
+}
+
+@media (min-width: 1300px) {
+  .main-nav__link--index {
+    font-size: 20px;
+    color: white;
+  }
+
+  .main-nav__item--index {
+    border-bottom: 2px solid white;
+  }
+}
