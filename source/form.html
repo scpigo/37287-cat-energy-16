@@ -36,40 +36,42 @@
     </header>
 
     <main class="page-main">
-      <section class="form">
+      <section class="form container">
         <h1 class="form__title page-title">Подбор программы</h1>
         <p class="form__description">Заполните анкету и мы подберем
         программу питания для вашего кота</p>
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="form__info">
-            <label class="form__label">
-              Имя:*
-              <input class="form__label-text" type="text" name="name" required>
-            </label>
-            <label class="form__label">
-              Вес (Кг):*
-              <input class="form__label-text" type="text" name="weight" required>
-            </label>
-            <label class="form__label">
-              Возраст (Лет):
-              <input class="form__label-text" type="text" name="age">
-            </label>
-          </fieldset>
+        <form class="form__form" action="https://echo.htmlacademy.ru" method="get">
+          <div class="form__wrapper form__wrapper--first">
+            <fieldset class="form__info">
+              <label class="form__label">
+                Имя:*
+                <input class="form__label-text" type="text" name="name" required>
+              </label>
+              <label class="form__label">
+                Вес (Кг):*
+                <input class="form__label-text" type="text" name="weight" required>
+              </label>
+              <label class="form__label">
+                Возраст (Лет):
+                <input class="form__label-text" type="text" name="age">
+              </label>
+            </fieldset>
 
-          <fieldset class="form__type">
-            <label class="form__label">
-              <input class="form__label-radio" type="radio" name="type" value="loss" checked>
-              Похудение
-            </label>
-            <label class="form__label">
-              <input class="form__label-radio" type="radio" name="type" value="gain">
-              Набор массы
-            </label>
-            <label class="form__label">
-              <input class="form__label-radio" type="radio" name="type" value="advice">
-              Не знаю (нужен ваш совет)
-            </label>
-          </fieldset>
+            <fieldset class="form__type">
+              <label class="form__label">
+                <input class="form__label-radio" type="radio" name="type" value="loss" checked>
+                Похудение
+              </label>
+              <label class="form__label">
+                <input class="form__label-radio" type="radio" name="type" value="gain">
+                Набор массы
+              </label>
+              <label class="form__label">
+                <input class="form__label-radio" type="radio" name="type" value="advice">
+                Не знаю (нужен ваш совет)
+              </label>
+            </fieldset>
+          </div>
 
           <fieldset class="form__contact">
             <legend class="form__legend">Контактные данные (владельца кота)</legend>
@@ -91,34 +93,44 @@
 
           <fieldset class="form__extra">
             <legend class="form__legend">Дополнительно</legend>
-            <label class="form__label">
-              <input class="form__label-check" type="checkbox" name="extra" value="sweetener" checked>
-              Сахарозаменитель
-            </label>
-            <label class="form__label">
-              <input class="form__label-check" type="checkbox" name="extra" value="water">
-              Питьевая вода
-            </label>
-            <label class="form__label">
-              <input class="form__label-check" type="checkbox" name="extra" value="milk">
-              Молоко
-            </label>
-            <label class="form__label">
-              <input class="form__label-check" type="checkbox" name="extra" value="vitamins">
-              Витамины
-            </label>
+            <div class="form__extra--wrapper">
+              <label class="form__label form__label--checkbox">
+                <input class="form__label-check" type="checkbox" name="extra" value="sweetener" checked>
+                Сахарозаменитель
+              </label>
+              <label class="form__label form__label--checkbox">
+                <input class="form__label-check" type="checkbox" name="extra" value="water">
+                Питьевая вода
+              </label>
+              <label class="form__label form__label--checkbox">
+                <input class="form__label-check" type="checkbox" name="extra" value="milk">
+                Молоко
+              </label>
+              <label class="form__label form__label--checkbox">
+                <input class="form__label-check" type="checkbox" name="extra" value="vitamins">
+                Витамины
+              </label>
+            </div>
           </fieldset>
-          <button class="button form__button" type="submit" name="submit-button">Отправить заявку</button>
-          <small class="form-legend">
-            <sup>*</sup> — Обязательные поля
-          </small>
+          <div class="form__wrapper form__wrapper--second">
+            <button class="button form__button" type="submit" name="submit-button">Отправить заявку</button>
+            <small class="form-legend">
+              <sup>*</sup> — Обязательные поля
+            </small>
+          </div>
         </form>
       </section>
 
-      <section class="contacts">
-        <div class="contacts__wrapper">
-          <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
-          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <section class="contacts contacts--white">
+        <div class="container contacts__container">
+          <div class="contacts__wrapper container">
+            <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
+            <p class="contacts__address">
+              <span class="contacts__address--location">ул. Большая Конюшенная, д. 19/8</span>
+              <br>
+              <span class="contacts__address--city">Санкт-Петербург</span>
+            </p>
+          </div>
         </div>
         <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Как проехать">
       </section>

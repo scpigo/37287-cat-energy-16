@@ -1,7 +1,3 @@
-.extra {
-  padding: 0 20px;
-}
-
 .extra__title {
   font-size: 24px;
   font-weight: 500;
@@ -34,10 +30,6 @@
 }
 
 @media (min-width: 768px) {
-  .extra {
-    padding: 0 30px;
-  }
-
   .extra__title {
     margin-left: 37px;
     margin-bottom: 82px;
@@ -63,5 +55,42 @@
 
   .extra__parameter {
     margin-right: 52px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .extra {
+    margin: 0;
+  }
+
+  .extra__title {
+    width: auto;
+    margin-left: 0;
+  }
+
+  .extra__list {
+    width: 855px;
+    margin: 0;
+  }
+
+  .extra__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 16px 0;
+    border-right: none;
+    border-left: none;
+  }
+
+  .extra__wrapper {
+    margin: 0;
+  }
+
+  .extra__name {
+    width: 245px;
+  }
+
+  .extra__stats {
+    width: 285px;
   }
 }

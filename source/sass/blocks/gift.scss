@@ -1,5 +1,4 @@
 .gift {
-  padding: 0 20px;
   margin-top: 40px;
   min-height: 289px;
   background-color: #68b738;
@@ -16,4 +15,28 @@
   padding-top: 190px;
   margin: 0;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .gift {
+    min-height: 200px;
+  }
+
+  .gift__title {
+    width: 160px;
+    padding: 0;
+    padding-top: 75px;
+    margin-right: 125px;
+    margin-left: auto;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1300px) {
+  .gift {
+    width: 245px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
 }

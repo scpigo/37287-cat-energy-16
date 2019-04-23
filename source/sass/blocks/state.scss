@@ -1,12 +1,26 @@
 .state {
   display: flex;
+  justify-content: space-between;
 }
 
 .state__element {
-  width: 124px;
+  width: 122px;
 }
 
 .state__value {
   font-size: 24px;
   margin: 0;
+  text-align: center;
 }
+
+.state__description {
+  margin: 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .state__element:first-child {
+    margin-right: 42px;
+  }
+}
+
