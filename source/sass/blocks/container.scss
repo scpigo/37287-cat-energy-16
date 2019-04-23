@@ -1,11 +1,21 @@
 .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 .container__partial {
   padding-left: 0;
   padding-right: 0;
+}
+
+.container__desktop {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.container__desktop--wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media (min-width: 768px) {
@@ -22,6 +32,16 @@
   .container__partial--wrapper {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .container__desktop {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .container__desktop--wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -40,6 +60,11 @@
   }
 
   .container__partial--wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .container__desktop--wrapper {
     padding-left: 0;
     padding-right: 0;
   }

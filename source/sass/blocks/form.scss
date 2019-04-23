@@ -1,9 +1,4 @@
-.form__title {
-  padding: 0 20px;
-}
-
 .form__description {
-  padding: 0 20px;
   text-transform: uppercase;
 }
 
@@ -16,7 +11,6 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  padding: 20px 0;
 }
 
 .form__info,
@@ -24,20 +18,33 @@
   border-bottom: 1px solid #d9d9d9;
 }
 
+.form__comment {
+  margin-right: 20px;
+}
+
+.form__type {
+  padding: 0;
+}
+
 .form__label {
-  padding: 0 20px;
   padding-bottom: 14px;
   text-transform: uppercase;
 }
 
+.form__label-text {
+  margin-left: 20px;
+  margin-right: 37px;
+  flex-grow: 1;
+}
+
 .form__textarea {
-  margin: 0 20px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .form__legend {
   font-size: 24px;
   font-weight: 500;
-  padding: 0 20px;
   padding-top: 20px;
 }
 
@@ -50,4 +57,103 @@
 .form-legend {
   display: block;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .form__title,
+  .form__description,
+  .form__form {
+    margin-left: 40px;
+    padding: 0;
+  }
+
+  .form__description {
+    font-size: 20px;
+  }
+
+  .form__label {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 20px;
+  }
+
+  .form__info,
+  .form__type,
+  .form__contact,
+  .form__comment,
+  .form__extra {
+    border: none;
+  }
+
+  .form__type {
+    border: 1px solid #e6e6e6;
+    margin-right: 37px;
+    padding: 24px 27px;
+  }
+
+  .form__comment {
+    margin-right: 37px;
+  }
+
+  .form__legend {
+    padding: 0;
+    padding-top: 45px;
+    font-size: 36px;
+  }
+
+  .form__textarea {
+    margin: 0;
+    height: 172px;
+  }
+
+  .form__extra--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__label--checkbox {
+    width: 314px;
+    padding-bottom: 32px;
+  }
+
+  .form__wrapper {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .form__wrapper--first {
+    display: block;
+  }
+
+  .form__button {
+    width: 50%;
+    margin: 0;
+  }
+
+  .form-legend {
+    margin-left: 60px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .form__wrapper--first {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__info,
+  .form__type {
+    flex-grow: 1;
+  }
+
+  .form__textarea {
+    width: 100%;
+  }
+
+  .form__label--checkbox {
+    width: 245px;
+  }
 }
