@@ -22,10 +22,12 @@
 
 .example__photos {
   list-style: none;
+  padding: 0;
 }
 
-.example__photos {
-  padding: 0;
+.example__photo {
+  display: block;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {

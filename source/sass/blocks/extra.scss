@@ -20,13 +20,32 @@
 .extra__name {
   margin: 0;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: normal;
   text-transform: uppercase;
 }
 
 .extra__stats {
   display: flex;
   justify-content: space-between;
+}
+
+.extra__gift {
+  margin-top: 40px;
+  min-height: 289px;
+  background-color: #68b738;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.extra__gift--title {
+  font-size: 16px;
+  color: white;
+  font-weight: normal;
+  padding: 0 55px;
+  padding-top: 190px;
+  margin: 0;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -56,15 +75,30 @@
   .extra__parameter {
     margin-right: 52px;
   }
+
+  .extra__gift {
+    min-height: 200px;
+  }
+
+  .extra__gift--title {
+    width: 160px;
+    padding: 0;
+    padding-top: 75px;
+    margin-right: 125px;
+    margin-left: auto;
+    text-align: left;
+  }
 }
 
 @media (min-width: 1300px) {
   .extra {
-    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .extra__title {
-    width: auto;
+    width: 100%;
     margin-left: 0;
   }
 
@@ -88,9 +122,24 @@
 
   .extra__name {
     width: 245px;
+    font-size: 20px;
   }
 
   .extra__stats {
     width: 285px;
+    font-size: 16px;
+  }
+
+  .extra__gift {
+    width: 245px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .extra__gift--title {
+    padding-top: 0;
+    margin: 0 auto;
+    margin-top: 190px;
   }
 }
