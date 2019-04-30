@@ -51,15 +51,23 @@
 @media (min-width: 768px) {
   .page-header {
     display: flex;
-    height: 140px;
+    height: 115px;
+    margin-top: 10px;
   }
 
   .page-header__wrapper {
+    padding: 12px 0;
     margin-left: 0;
     border: none;
   }
 
   .page-header__toggle {
     @include invisible;
+  }
+}
+
+@media (min-width: 1300px) {
+  .page-header {
+    margin-top: 40px;
   }
 }
