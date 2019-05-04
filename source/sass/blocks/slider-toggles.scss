@@ -1,6 +1,10 @@
 .slider-toggles {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.slider-toggles__button {
+  margin: 0 20px;
 }
 
 .slider-toggles__description {

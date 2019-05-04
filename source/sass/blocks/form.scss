@@ -1,5 +1,11 @@
+.form__title {
+  padding-top: 20px;
+}
+
 .form__description {
   text-transform: uppercase;
+  margin-top: 25px;
+  line-height: 18px;
 }
 
 .form__info,
@@ -8,6 +14,7 @@
 .form__comment,
 .form__extra {
   border: none;
+  padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -18,23 +25,35 @@
   border-bottom: 1px solid #d9d9d9;
 }
 
+.form__info {
+  margin-top: 40px;
+}
+
 .form__comment {
   margin-right: 20px;
 }
 
 .form__type {
   padding: 0;
+  margin-top: 28px;
 }
 
 .form__label {
-  padding-bottom: 14px;
+  display: flex;
+  padding-bottom: 15px;
   text-transform: uppercase;
+  font-size: 16px;
+}
+
+.form__label--radio {
+  margin-left: 23px;
+  padding-bottom: 18px;
 }
 
 .form__label-text {
-  margin-left: 20px;
-  margin-right: 37px;
   flex-grow: 1;
+  padding: 13px 13px;
+  margin-left: 15px;
 }
 
 .form__textarea {
@@ -45,7 +64,7 @@
 .form__legend {
   font-size: 24px;
   font-weight: 500;
-  padding-top: 20px;
+  padding: 25px 0;
 }
 
 .form__button {

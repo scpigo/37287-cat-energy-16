@@ -27,9 +27,11 @@
 .extra__stats {
   display: flex;
   justify-content: space-between;
+  font-family: "Arial"
 }
 
 .extra__gift {
+  position: relative;
   margin-top: 40px;
   min-height: 289px;
   background-color: #68b738;
@@ -38,10 +40,23 @@
   background-repeat: no-repeat;
 }
 
+.extra__gift::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 60px;
+  top: 65px;
+  left: 50%;
+  margin-left: -27px;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+}
+
 .extra__gift--title {
   font-size: 16px;
   color: white;
   font-weight: normal;
+  font-family: "Arial";
   padding: 0 55px;
   padding-top: 190px;
   margin: 0;
@@ -51,18 +66,21 @@
 @media (min-width: 768px) {
   .extra__title {
     margin-left: 37px;
-    margin-bottom: 82px;
+    margin-top: 15px;
+    margin-bottom: 71px;
     font-size: 36px;
   }
 
   .extra__wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+    align-items: baseline;
+    margin-bottom: 23px;
   }
 
   .extra__item {
-    padding: 27px 37px;
+    padding: 24px 37px;
+    padding-bottom: 26px;
     border-top: 1px solid #d9d9d9;
     border-right: 1px solid #d9d9d9;
     border-left: 1px solid #d9d9d9;
@@ -78,6 +96,13 @@
 
   .extra__gift {
     min-height: 200px;
+    margin-top: 70px;
+    margin-bottom: 125px;
+  }
+
+  .extra__gift::before {
+    left: 90px;
+    margin-left: 0;
   }
 
   .extra__gift--title {
@@ -95,15 +120,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 80px;
   }
 
   .extra__title {
     width: 100%;
+    margin-top: 20px;
     margin-left: 0;
   }
 
   .extra__list {
-    width: 855px;
+    width: 895px;
     margin: 0;
   }
 
@@ -111,12 +138,13 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 16px 0;
+    padding: 12px 0;
     border-right: none;
     border-left: none;
   }
 
   .extra__wrapper {
+    width: 610px;
     margin: 0;
   }
 
@@ -137,9 +165,16 @@
     padding: 0;
   }
 
+  .extra__gift::before {
+    left: 50%;
+    margin-left: -27px;
+  }
+
   .extra__gift--title {
+    width: 150px;
     padding-top: 0;
     margin: 0 auto;
     margin-top: 190px;
+    text-align: center;
   }
 }
