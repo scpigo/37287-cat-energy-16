@@ -20,12 +20,25 @@
 }
 
 .catalog__extra {
+  position: relative;
   padding-bottom: 24px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 }
 
+.catalog__extra::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 25px;
+  left: 50%;
+  margin-left: -15px;
+  background-image: url("../img/icon-plus-mobile.svg");
+}
+
 .catalog__extra-title {
+  margin-top: 80px;
   margin-bottom: 8px;
   font-size: 15px;
   color: black;
@@ -116,6 +129,17 @@
     top: 90px;
     border: 1px solid #e6e6e6;
     background-color: white;
+  }
+
+  .catalog__item--extra::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 140px;
+    left: 50%;
+    margin-left: -30px;
+    background-image: url("../img/icon-plus.svg");
   }
 
   .catalog__parameter,
