@@ -46,8 +46,20 @@
 
 @media (min-width: 768px) {
   .example {
-    background-color: white;
+    position: relative;
+    background: none;
     padding-bottom: 95px;
+  }
+
+  .example::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 30px);
+    height: 300px;
+    bottom: 0;
+    left: -30px;
+    background-color: #f2f2f2;
+    z-index: -1;
   }
 
   .example__title {
@@ -78,8 +90,21 @@
 }
 
 @media (min-width: 1300px) {
+  .example__wrapper--desktop {
+    display: flex;
+  }
+
+  .example__desktop {
+    width: 50%;
+  }
+
   .example__title {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .example::before {
+    bottom: -50px;
+    height: 400px;
   }
 }

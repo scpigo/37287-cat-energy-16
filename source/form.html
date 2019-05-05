@@ -60,14 +60,17 @@
             <fieldset class="form__type">
               <label class="form__label form__label--radio">
                 <input class="form__label-radio" type="radio" name="type" value="loss" checked>
+                <span class="form__label-radio--indicator"></span>
                 Похудение
               </label>
               <label class="form__label form__label--radio">
                 <input class="form__label-radio" type="radio" name="type" value="gain">
+                <span class="form__label-radio--indicator"></span>
                 Набор массы
               </label>
               <label class="form__label form__label--radio">
                 <input class="form__label-radio" type="radio" name="type" value="advice">
+                <span class="form__label-radio--indicator"></span>
                 Не знаю (нужен ваш совет)
               </label>
             </fieldset>
@@ -75,13 +78,13 @@
 
           <fieldset class="form__contact">
             <legend class="form__legend">Контактные данные (владельца кота)</legend>
-            <label class="form__label">
+            <label class="form__label form__label--mail">
               E-mail:*
-              <input class="form__label-text" type="email" name="email" required>
+              <input class="form__label-text form__label-text--mail" type="email" name="email" required>
             </label>
-            <label class="form__label">
+            <label class="form__label form__label--phone">
               Телефон:*
-              <input class="form__label-text" type="tel" name="phone" required>
+              <input class="form__label-text form__label-text--phone" type="tel" name="phone" required>
             </label>
           </fieldset>
 
@@ -96,18 +99,22 @@
             <div class="form__extra--wrapper">
               <label class="form__label form__label--checkbox">
                 <input class="form__label-check" type="checkbox" name="extra" value="sweetener" checked>
+                <span class="form__label-check--indicator"></span>
                 Сахарозаменитель
               </label>
               <label class="form__label form__label--checkbox">
                 <input class="form__label-check" type="checkbox" name="extra" value="water">
+                <span class="form__label-check--indicator"></span>
                 Питьевая вода
               </label>
               <label class="form__label form__label--checkbox">
                 <input class="form__label-check" type="checkbox" name="extra" value="milk">
+                <span class="form__label-check--indicator"></span>
                 Молоко
               </label>
               <label class="form__label form__label--checkbox">
                 <input class="form__label-check" type="checkbox" name="extra" value="vitamins">
+                <span class="form__label-check--indicator"></span>
                 Витамины
               </label>
             </div>
@@ -121,7 +128,7 @@
         </form>
       </section>
 
-      <section class="contacts contacts--white">
+      <section class="contacts">
         <div class="container contacts__container">
           <div class="contacts__wrapper">
             <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
