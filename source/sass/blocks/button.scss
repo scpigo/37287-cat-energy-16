@@ -1,6 +1,6 @@
 .button {
   display: block;
-  background: #68b738;
+  background-color: #68b738;
   color: white;
   text-transform: uppercase;
   text-decoration: none;
@@ -10,6 +10,14 @@
   text-align: center;
 }
 
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  color: #8fc46e;
+}
+
 .button--promo {
   margin: 0;
 }
@@ -17,6 +25,14 @@
 .button--gray {
   color: #111111;
   background-color: #f2f2f2;
+}
+
+.button--gray:hover {
+  background-color: #ebebeb;
+}
+
+.button--gray:active {
+  color: #b9b9b9;
 }
 
 .button--extra {

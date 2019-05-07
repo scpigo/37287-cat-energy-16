@@ -2,10 +2,23 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 80px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
   list-style: none;
+}
+
+.social-list__vk {
+  width: 22px;
+}
+
+.social-list__insta {
+  width: 16px;
+}
+
+.social-list__fb {
+  width: 10px;
 }
 
 @media (min-width: 768px) {
@@ -17,5 +30,17 @@
 
   .social-list__element {
     margin-right: 28px;
+  }
+
+  .social-list__vk {
+    width: 30px;
+  }
+
+  .social-list__insta {
+    width: 23px;
+  }
+
+  .social-list__fb {
+    width: 14px;
   }
 }

@@ -7,14 +7,28 @@
 }
 
 .copyright__text {
+  margin-bottom: 6px;
   font-size: 16px;
   font-family: "Arial";
   text-decoration: none;
   color: #111111;
 }
 
+.copyright:hover path {
+  fill: #68b738;
+}
+
+.copyright:active {
+  opacity: 0.3;
+}
+
+
 @media (min-width: 768px) {
   .copyright {
     margin: auto 0;
+  }
+
+  .copyright__text {
+    margin-right: 15px;
   }
 }
