@@ -12,6 +12,14 @@
   margin-top: 0;
 }
 
+.page-footer__logo-text:hover {
+  opacity: 0.8;
+}
+
+.page-footer__logo-text:active {
+  opacity: 0.6;
+}
+
 @media (min-width: 768px) {
   .page-footer {
     padding-top: 30px;

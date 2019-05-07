@@ -38,6 +38,7 @@
 .example__photo {
   display: block;
   margin: 0 auto;
+  width: 320px;
 }
 
 .example__toggles {
@@ -86,6 +87,14 @@
     padding: 0;
     font-size: 20px;
     text-align: right;
+  }
+
+  .example__photo--before {
+    width: 677px;
+  }
+
+  .example__photo--after {
+    width: 545px;
   }
 }
 

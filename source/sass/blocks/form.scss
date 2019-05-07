@@ -37,9 +37,10 @@
 .form__label {
   position: relative;
   display: flex;
+  align-items: center;
   padding-bottom: 15px;
-  text-transform: uppercase;
   font-size: 16px;
+  text-transform: uppercase;
 }
 
 .form__label::after {
@@ -84,6 +85,14 @@
   margin-right: 20px;
 }
 
+.form__label-radio--indicator:hover {
+  border: 1px solid #bcbcbc;
+}
+
+.form__label-radio--indicator:active {
+  opacity: 0.3;
+}
+
 .form__label--radio input[type="radio"]:checked + .form__label-radio--indicator::after {
   content: "";
   position: absolute;
@@ -104,6 +113,14 @@
   margin-right: 20px;
 }
 
+.form__label-check--indicator:hover {
+  border: 1px solid #bcbcbc;
+}
+
+.form__label-check--indicator:active {
+  opacity: 0.3;
+}
+
 .form__label--checkbox input[type="checkbox"]:checked + .form__label-check--indicator::after {
   content: "";
   position: absolute;
@@ -118,11 +135,54 @@
   flex-grow: 1;
   padding: 13px 13px;
   margin-left: 15px;
+  border: 1px solid #e6e6e6;
+  font-family: "Oswald";
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.form__label-text:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.form__label-text:active {
+  border: 1px solid #444444;
+}
+
+.form__label-text:invalid {
+  border: 1px solid #ff8282;
+}
+
+.form__label-text:focus {
+  outline: 0;
 }
 
 .form__textarea {
+  border: 1px solid #e6e6e6;
   box-sizing: border-box;
   width: 100%;
+  height: 148px;
+  padding: 13px 13px;
+  resize: none;
+  font-family: "Oswald";
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.form__textarea:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.form__textarea:active {
+  border: 1px solid #444444;
+}
+
+.form__textarea:invalid {
+  border: 1px solid #ff8282;
+}
+
+.form__textarea:focus {
+  outline: 0;
 }
 
 .form__legend {
@@ -175,6 +235,14 @@
     padding-left: 0;
     padding-right: 0;
     font-size: 20px;
+  }
+
+  .form__label--mail::after {
+    top: 22px;
+  }
+
+  .form__label--phone::after {
+    top: 19px;
   }
 
   .form__label-radio--indicator {
@@ -234,8 +302,12 @@
     top: 75px;
   }
 
+  .form__label-text {
+    font-size: 20px;
+  }
+
   .form__textarea {
-    margin: 0;
+    font-size: 20px;
     height: 172px;
   }
 

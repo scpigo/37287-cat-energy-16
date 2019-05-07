@@ -125,6 +125,7 @@
     min-height: 200px;
     margin-top: 70px;
     margin-bottom: 125px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
   }
 
   .extra__gift::before {
@@ -169,7 +170,6 @@
   }
 
   .extra__list {
-    width: 2200px;
     margin: 0;
   }
 
@@ -185,6 +185,7 @@
   .extra__wrapper {
     width: 610px;
     margin: 0;
+    margin-right: 40px;
   }
 
   .extra__name {
@@ -202,6 +203,7 @@
     height: auto;
     margin: 0;
     padding: 0;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
   }
 
   .extra__gift::before {

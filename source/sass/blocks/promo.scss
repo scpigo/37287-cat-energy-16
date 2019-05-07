@@ -29,37 +29,8 @@
 
 .promo__image {
   display: block;
+  width: 280px;
   margin: 0 auto;
-}
-
-@media (max-width: 767px) {
-  .promo__image--tablet {
-    @include invisible;
-  }
-
-  .promo__image--desktop {
-    @include invisible;
-  }
-}
-
-@media (max-width: 1299px) {
-  .promo__image--mobile {
-    @include invisible;
-  }
-
-  .promo__image--desktop {
-    @include invisible;
-  }
-}
-
-@media (min-width: 1300px) {
-  .promo__image--mobile {
-    @include invisible;
-  }
-
-  .promo__image--tablet {
-    @include invisible;
-  }
 }
 
 @media (min-width: 768px) {
@@ -100,6 +71,8 @@
 
   .promo__image {
     position: absolute;
+    width: 709px;
+    height: auto;
     z-index: -1;
     top: 200px;
   }
@@ -133,6 +106,7 @@
   .promo__image {
     top: -78px;
     left: 490px;
+    width: 552px;
   }
 
   .promo__title,

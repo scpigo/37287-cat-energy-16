@@ -33,6 +33,7 @@
 
 .contacts__map--image {
   display: block;
+  width: 320px;
   margin: 0 auto;
 }
 
@@ -59,6 +60,10 @@
   .contacts__address--city {
     display: block;
     margin-top: 20px;
+  }
+
+  .contacts__map--image {
+    width: 768px;
   }
 }
 
@@ -92,5 +97,9 @@
 
   .contacts__address--city {
     margin-top: 10px;
+  }
+
+  .contacts__map--image {
+    width: 1300px;
   }
 }
