@@ -1,5 +1,9 @@
+.form {
+  margin-bottom: 35px;
+}
+
 .form__title {
-  padding-top: 20px;
+  padding-top: 18px;
 }
 
 .form__description {
@@ -27,11 +31,21 @@
 
 .form__info {
   margin-top: 40px;
+  padding-bottom: 5px;
 }
 
 .form__type {
   padding: 0;
-  margin-top: 28px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.form__contact {
+  margin-bottom: 10px;
+}
+
+.form__comment {
+  margin-bottom: 30px;
 }
 
 .form__label {
@@ -67,7 +81,7 @@
 .form__label--radio {
   display: flex;
   align-items: center;
-  padding-bottom: 18px;
+  padding-bottom: 14px;
 }
 
 .form__label-radio,
@@ -83,6 +97,10 @@
   border: 1px solid #cecece;
   border-radius: 50%;
   margin-right: 20px;
+}
+
+.form__label--checkbox {
+  padding-bottom: 13px;
 }
 
 .form__label-radio--indicator:hover {
@@ -133,7 +151,7 @@
 
 .form__label-text {
   flex-grow: 1;
-  padding: 13px 13px;
+  padding: 10px 13px;
   margin-left: 15px;
   border: 1px solid #e6e6e6;
   font-family: "Oswald";
@@ -189,7 +207,8 @@
   position: relative;
   font-size: 24px;
   font-weight: 500;
-  padding: 25px 0;
+  line-height: 24px;
+  padding-bottom: 35px;
 }
 
 .form__legend::after {
@@ -199,26 +218,32 @@
   width: 5000px;
   height: 3px;
   left: calc(100% + 20px);
-  top: 45px;
+  top: 15px;
 }
 
 .form__button {
   border: none;
   margin: 0;
-  margin-bottom: 25px;
+  margin-top: 22px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
 .form-legend {
   display: block;
   text-align: center;
+  font-size: 14px;
+  font-family: "Arial";
 }
 
 @media (min-width: 768px) {
+  .form {
+    margin-bottom: 75px;
+  }
+
   .form__title,
   .form__description,
   .form__form {
-    margin-left: 40px;
     padding: 0;
   }
 
@@ -226,15 +251,21 @@
     width: 330px;
     font-size: 20px;
     line-height: 30px;
-    padding: 0 37px;
-    padding-bottom: 50px;
+    padding: 0 40px;
+    padding-bottom: 45px;
+    margin-top: 40px;
   }
 
   .form__label {
     display: flex;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 20px;
     font-size: 20px;
+  }
+
+  .form__label--radio {
+    padding-bottom: 15px;
   }
 
   .form__label--mail::after {
@@ -273,17 +304,28 @@
   .form__comment,
   .form__extra {
     border: none;
-    margin: 0 37px;
+    margin: 0 40px;
+  }
+
+  .form__info {
+    padding-bottom: 50px;
   }
 
   .form__type {
     border: 1px solid #e6e6e6;
     padding: 24px 27px;
+    padding-bottom: 5px;
+    margin-bottom: 35px;
+  }
+
+  .form__comment {
+   margin-bottom: 30px;
   }
 
   .form__legend {
     padding: 0;
     padding: 45px 0;
+    padding-bottom: 65px;
     font-size: 36px;
   }
 
@@ -295,11 +337,11 @@
     width: 500px;
     height: 3px;
     margin-left: -500px;
-    top: 75px;
+    top: 60px;
   }
 
   .form__legend::after {
-    top: 75px;
+    top: 60px;
   }
 
   .form__label-text {
@@ -307,6 +349,7 @@
   }
 
   .form__textarea {
+    margin-top: 20px;
     font-size: 20px;
     height: 172px;
   }
@@ -318,8 +361,12 @@
   }
 
   .form__label--checkbox {
-    width: 280px;
+    width: 285px;
     padding-bottom: 32px;
+  }
+
+  .form__label--mail {
+    margin-top: 20px;
   }
 
   .form__wrapper {
@@ -331,10 +378,16 @@
     display: block;
   }
 
+  .form__wrapper--second {
+    margin-top: 20px;
+  }
+
   .form__button {
-    width: 50%;
+    width: 283px;
+    padding: 10px 0;
     margin: 0;
-    margin-left: 37px;
+    margin-left: 40px;
+    font-family: "Oswald";
   }
 
   .form-legend {
@@ -344,9 +397,30 @@
 }
 
 @media (min-width: 1300px) {
+  .form {
+    margin-bottom: 82px;
+  }
+
+  .form__title {
+    margin-top: 20px;
+  }
+
+  .form__description {
+    padding-left: 0;
+  }
+
   .form__wrapper--first {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .form__info,
+  .form__type,
+  .form__contact,
+  .form__comment,
+  .form__extra {
+    margin: 0;
   }
 
   .form__info,
@@ -354,11 +428,54 @@
     flex-grow: 1;
   }
 
+  .form__info {
+    margin-right: 40px;
+    padding-bottom: 10px;
+  }
+
+  .form__type {
+    margin-left: 40px;
+  }
+
+  .form__contact--wrapper {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 5px;
+  }
+
+  .form__label--mail,
+  .form__label--phone {
+    flex-grow: 1;
+  }
+
+  .form__label--mail {
+    margin-right: 40px;
+  }
+
+  .form__label--phone {
+    margin-left: 40px;
+  }
+
   .form__textarea {
     width: 100%;
+    margin-top: 16px;
+    margin-bottom: 30px;
+  }
+
+  .form__wrapper--second {
+    margin-top: 29px;
+  }
+
+  .form__button {
+    width: 570px;
+    margin-left: 0;
   }
 
   .form__label--checkbox {
     width: 245px;
+  }
+
+  .form-legend {
+    margin-left: 80px;
   }
 }

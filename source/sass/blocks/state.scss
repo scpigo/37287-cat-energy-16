@@ -4,7 +4,10 @@
 }
 
 .state__element {
+  position: relative;
   width: 122px;
+  border: 1px solid #cdcdcd;
+  border-radius: 2px;
 }
 
 .state__value {
@@ -12,20 +15,26 @@
   font-weight: 500;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-bottom: 13px;
   text-align: center;
 }
 
 .state__description {
+  position: absolute;
   padding: 0 16px;
-  margin: 0 18px;
+  background-color: #f2f2f2;
   text-align: center;
   line-height: 12px;
+  bottom: -28px;
+  left: 50%;
+  transform:translateX(-50%);
 }
 
 @media (min-width: 768px) {
   .state__element {
     width: 160px;
+    height: 70px;
   }
 
   .state__element:first-child {
@@ -34,12 +43,30 @@
 
   .state__value {
     font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 0;
   }
 
   .state__description {
-    margin: 0 auto;
-    min-width: 90px;
+    padding: 0;
+    min-width: 100px;
     max-width: 125px;
-    margin-top: 10px;
+    bottom: -19px;
+    left: 50%;
+    transform:translateX(-50%);
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: 1300px) {
+  .state {
+    justify-content: flex-start;
+  }
+
+  .state__description {
+    background-color: #f2f2f2;
+    min-width: 100px;
+    max-width: none;
+    padding: 0 15px;
   }
 }

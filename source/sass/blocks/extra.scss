@@ -1,7 +1,12 @@
+.extra {
+  padding-bottom: 35px;
+}
+
 .extra__title {
   position: relative;
   font-size: 24px;
   font-weight: 500;
+  margin-bottom: 27px;
 }
 
 .extra__title::after {
@@ -21,6 +26,7 @@
 
 .extra__item {
   padding: 15px 0;
+  padding-top: 12px;
   border-top: 1px solid #d9d9d9;
 }
 
@@ -38,7 +44,9 @@
 .extra__stats {
   display: flex;
   justify-content: space-between;
-  font-family: "Arial"
+  font-family: "Arial";
+  margin: 8px 0;
+  margin-bottom: 12px;
 }
 
 .extra__gift {
@@ -49,6 +57,10 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
 .extra__gift::before {
@@ -124,8 +136,12 @@
   .extra__gift {
     min-height: 200px;
     margin-top: 70px;
-    margin-bottom: 125px;
+    margin-bottom: 40px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   .extra__gift::before {
@@ -148,7 +164,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
 
   .extra__title {
@@ -177,7 +193,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 12px 0;
+    padding: 15.5px 0;
     border-right: none;
     border-left: none;
   }
@@ -204,6 +220,10 @@
     margin: 0;
     padding: 0;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 
   .extra__gift::before {
