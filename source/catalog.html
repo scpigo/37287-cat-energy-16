@@ -2,11 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.min.css" rel="stylesheet">
   </head>
 
   <body>
+    <script src="js/picturefill.js"></script>
     <header class="page-header container container__partial">
       <div class="page-header__wrapper container__partial--wrapper">
         <a class="page-header__logo" href="index.html">
@@ -17,7 +19,7 @@
           </picture>
         </a>
         <button class="page-header__toggle page-header__toggle--nojs" type="button">
-          <img class="page-header__toggle-image" src="img/icon-close.svg" width="24" height="18">
+          <img class="page-header__toggle-image" src="img/icon-mobile-menu.svg" width="24" height="18" alt="Кнопка меню">
         </button>
       </div>
       <nav class="main-nav">
@@ -47,11 +49,13 @@
                 <picture>
                   <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
-                  <img class="catalog__image" src="img/chicken-small-mobile@1x.jpg" srset="img/chicken-small-mobile@2x.jpg 2x" width="140" height="144" alt="Cat energy pro 500 грамм курица">
+                  <img class="catalog__image" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" width="140" height="144" alt="Cat energy pro 500 грамм курица">
                 </picture>
               </a>
               <div class="catalog-wrapper">
-                <h3 class="catalog__name">Cat energy pro 500 г</h3>
+                <a class="catalog__link-name" href="#">
+                  <h3 class="catalog__name">Cat energy pro 500 г</h3>
+                </a>
                 <table class="catalog__stats">
                   <tr class="catalog__row">
                       <td class="catalog__parameter">Объем</td>
@@ -80,7 +84,9 @@
                 </picture>
               </a>
               <div class="catalog-wrapper">
-                <h3 class="catalog__name">Cat energy pro 1000 г</h3>
+                <a class="catalog__link-name" href="#">
+                  <h3 class="catalog__name">Cat energy pro 1000 г</h3>
+                </a>
                 <table class="catalog__stats">
                   <tr class="catalog__row">
                       <td class="catalog__parameter">Объем</td>
@@ -105,11 +111,13 @@
                 <picture>
                   <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
-                  <img class="catalog__image" src="img/fish-small-mobile@1x.jpg" src="img/fish-small-mobile@2x.jpg 2x" width="140" height="144" alt="Cat energy pro 500 грамм рыба">
+                  <img class="catalog__image" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" width="140" height="144" alt="Cat energy pro 500 грамм рыба">
                 </picture>
               </a>
               <div class="catalog-wrapper">
-                <h3 class="catalog__name">Cat energy pro 500 г</h3>
+                <a class="catalog__link-name" href="#">
+                  <h3 class="catalog__name">Cat energy pro 500 г</h3>
+                </a>
                 <table class="catalog__stats">
                   <tr class="catalog__row">
                       <td class="catalog__parameter">Объем</td>
@@ -138,7 +146,9 @@
                 </picture>
               </a>
               <div class="catalog-wrapper">
-                <h3 class="catalog__name">Cat energy pro 1000 г</h3>
+                <a class="catalog__link-name" href="#">
+                  <h3 class="catalog__name">Cat energy pro 1000 г</h3>
+                </a>
                 <table class="catalog__stats">
                   <tr class="catalog__row">
                       <td class="catalog__parameter">Объем</td>
@@ -167,7 +177,9 @@
                 </picture>
               </a>
               <div class="catalog-wrapper">
-                <h3 class="catalog__name">Cat energy slim 500 г</h3>
+                <a class="catalog__link-name" href="#">
+                  <h3 class="catalog__name">Cat energy slim 500 г</h3>
+                </a>
                 <table class="catalog__stats">
                   <tr class="catalog__row">
                       <td class="catalog__parameter">Объем</td>
@@ -196,7 +208,9 @@
                 </picture>
               </a>
               <div class="catalog-wrapper">
-                <h3 class="catalog__name">Cat energy slim 1000 г</h3>
+                <a class="catalog__link-name" href="#">
+                  <h3 class="catalog__name">Cat energy slim 1000 г</h3>
+                </a>
                 <table class="catalog__stats">
                   <tr class="catalog__row">
                       <td class="catalog__parameter">Объем</td>
@@ -220,12 +234,14 @@
               <a class="catalog__link" href="#">
                 <picture>
                   <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 2x, img/rice-small-tablet@1x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@1x.png 2x">
                   <img class="catalog__image" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" width="140" height="144" alt="Cat energy pro 500 грамм рис">
                 </picture>
               </a>
               <div class="catalog-wrapper">
-                <h3 class="catalog__name">Cat energy slim 500 г</h3>
+                <a class="catalog__link-name" href="#">
+                  <h3 class="catalog__name">Cat energy slim 500 г</h3>
+                </a>
                 <table class="catalog__stats">
                   <tr class="catalog__row">
                       <td class="catalog__parameter">Объем</td>
@@ -258,7 +274,10 @@
       </section>
 
       <section class="extra container">
-        <h2 class="extra__title">Дополнительные товары</h2>
+        <div class="extra__line-container container--line">
+          <h2 class="extra__title">Дополнительные товары</h2>
+          <div class="extra__line"></div>
+        </div>
         <ul class="extra__list">
           <li class="extra__item">
             <div class="extra__wrapper">
@@ -303,7 +322,7 @@
         </ul>
 
         <div class="extra__gift">
-          <h2 class="extra__gift--title">Закажите все и получите чехол для кота в подарок!</h2>
+          <h2 class="extra__gift-title">Закажите все и получите чехол для кота в подарок!</h2>
         </div>
       </section>
 
@@ -312,13 +331,14 @@
           <div class="contacts__wrapper">
             <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
             <p class="contacts__address">
-              <span class="contacts__address--location">ул. Большая Конюшенная, д. 19/8</span>
+              <span class="contacts__address-location">ул. Большая Конюшенная, д. 19/8</span>
               <br>
-              <span class="contacts__address--city">Санкт-Петербург</span>
+              <span class="contacts__address-city">Санкт-Петербург</span>
             </p>
           </div>
         </div>
         <div class="contacts__map">
+          <iframe class="contacts__map--iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" height="362" allowfullscreen></iframe>
           <picture>
             <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
@@ -376,14 +396,15 @@
       var togglePic = document.querySelector('.page-header__toggle-image');
 
       toggle.classList.remove('page-header__toggle--nojs');
+      mainNav.classList.add('visually-hidden');
 
       toggle.addEventListener('click', function() {
           if (mainNav.classList.contains('visually-hidden')) {
             mainNav.classList.remove('visually-hidden');
-            togglePic.src = "img/icon-close.svg";
+            togglePic.src = 'img/icon-close.svg';
           } else {
             mainNav.classList.add('visually-hidden');
-            togglePic.src = "img/icon-mobile-menu.svg";
+            togglePic.src = 'img/icon-mobile-menu.svg';
           }
       });
 

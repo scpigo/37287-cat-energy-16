@@ -5,23 +5,23 @@
 
 .example__title {
   font-size: 36px;
-  font-weight: 500;
+  font-weight: 400;
   padding-top: 20px;
   margin-bottom: 30px;
 }
 
 .example__description {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   line-height: 18px;
 }
 
-.example__wrapper--tablet {
+.example__wrapper-tablet {
   margin-top: 22px;
 }
 
 .example__cost {
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
   margin-top: 32px;
 }
@@ -77,7 +77,7 @@
     line-height: 24px;
   }
 
-  .example__wrapper--tablet {
+  .example__wrapper-tablet {
     display: flex;
     margin-top: 53px;
   }
@@ -117,7 +117,7 @@
     padding-bottom: 50px;
   }
 
-  .example__wrapper--desktop {
+  .example__wrapper-desktop {
     display: flex;
     justify-content: space-between;
   }
@@ -141,7 +141,7 @@
     margin-top: 0;
   }
 
-  .example__wrapper--tablet {
+  .example__wrapper-tablet {
     flex-direction: column;
   }
 
@@ -152,7 +152,7 @@
     text-align: left;
   }
 
-  .example__cost--first {
+  .example__cost-first {
     margin-right: 50px;
   }
 
@@ -172,7 +172,7 @@
     margin: 0;
   }
 
-  .example__desktop--second {
+  .example__desktop-second {
     width: 48%;
     padding: 0;
     margin: 0;
