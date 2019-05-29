@@ -3,15 +3,19 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 25px;
+  margin-top: 0;
 }
 
 .copyright__text {
   margin-bottom: 6px;
   font-size: 16px;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   text-decoration: none;
   color: #111111;
+}
+
+.copyright__logo {
+  margin-right: -7px;
 }
 
 .copyright:hover path {

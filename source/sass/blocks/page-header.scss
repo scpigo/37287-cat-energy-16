@@ -33,11 +33,15 @@
   outline: 0;
 }
 
+.page-header__toggle--nojs {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .page-header {
     display: flex;
     height: 115px;
-    margin-top: 10px;
+    margin-top: 12px;
   }
 
   .page-header__wrapper {
